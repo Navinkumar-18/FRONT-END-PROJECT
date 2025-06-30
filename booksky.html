@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK SKY</title>
+    <link rel="stylesheet" href="booksky.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="navbar">
+        <h1>Book Sky</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Surrounded by Psychopaths</h2>
+            <h3>Thomas</h3>
+            <p>Surrounded by Psychopaths by Thomas Erikson delves into the dark world of manipulative personalities. It explains how these individuals exploit others using psychological tactics and communication tricks. The book also provides tools to identify and defend against such toxic behavior in personal and professional settings</p>
+</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+        <div class="popup-box">
+            <h2>Add Book</h2>
+            <form>
+                <input type="text" placeholder="Book Title" id="book-title-input">
+                <input type="text" placeholder="Book Author" id="book-author-input">
+                <textarea placeholder="Short Description" id="book-description"></textarea>
+                <button id="add-popup">ADD</button>
+                <button id="cancel-popup">CANCEL</button>
+            </form>
+        </div>
+
+
+    <button class="add-button" id="add-popup">+</button>
+    
+    <script src="booksky.js"></script>
+</body>
+</html>
